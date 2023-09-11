@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="./main.css">
+
+    <title>Nerd ao Quadrado</title>
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>Nerd ao Quadrado</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a id="menu-link" href="#promocao" class="nav-link">Promoções</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="menu-link" href="#produtos" class="nav-link">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="menu-link" href="#sobre" class="nav-link">Sobre Nós</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="menu-link" href="#contato" class="nav-link">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="conteiner">
+        <div id="carousel-images" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3500" class="carousel-item active">
+                    <img class="d-block w-100" src="images/aranhaverso.jpg" title="Banner: Homem Aranha">
+                </div>
+                <div data-bs-interval="3500" class="carousel-item">
+                    <img class="d-block w-100" src="images/arcane.jpg" title="Banner: Arcane">
+                </div>
+                <div data-bs-interval="3500" class="carousel-item">
+                    <img class="d-block w-100" src="images/slyCooper.jpg" title="Banner: SlyCooper">
+                </div>
+                <div data-bs-interval="3500" class="carousel-item">
+                    <img class="d-block w-100" src="images/mario.jpg" title="Banner: Super Mário">
+                </div>
+                <div data-bs-interval="3500" class="carousel-item">
+                    <img class="d-block w-100" src="images/thewitcher.jpg" title="Banner: The Witcher">
+                </div>
+                <div data-bs-interval="3500" class="carousel-item">
+                    <img class="d-block w-100" src="images/sonic.jpg" title="Banner: Sonic Frontiers">
+                </div>
+            </div>
+            <button data-bs-target="#carousel-images" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-images" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-images" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carousel-images" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-images" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#carousel-images" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#carousel-images" data-bs-slide-to="4"></button>
+                <button type="button" data-bs-target="#carousel-images" data-bs-slide-to="5"></button>
+            </div>
+        </div>
+    </div>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <div id="promocao">
+            <div class="container">
+                <h4 class="titulo-secao" id="titulo-promocao">Promoções Disponíveis:</h4>
+                <div class="row" id="secao-produto">
+                    <div class="col-4">
+                        <div class="card" id="produtos-promocao">
+                            <img src="https://nerdaocubo.com.br/cdn/shop/files/produtos_site.png?v=1686854601&width=1296" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    Roupas, Acessórios e muito mais
+                                </h4>
+                                <div class="preco-comprar">
+                                    <p class="card-text preco-riscado" id="preco-promocao">
+                                        DE: R$89,99
+                                    </p>
+                                    <p class="card-text" id="preco-promocao">
+                                        POR: R$70,00 
+                                    </p>
+                                <a href="#" class="btn btn-primary" id="button-comprar">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card" id="produtos-promocao">
+                            <img src="https://nerdaocubo.com.br/cdn/shop/files/produtos_site.png?v=1686854601&width=1296" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    Roupas, Acessórios e muito mais
+                                </h4>
+                                <div class="preco-comprar">
+                                    <p class="card-text preco-riscado" id="preco-promocao">
+                                        DE: R$89,99
+                                    </p>
+                                    <p class="card-text" id="preco-promocao">
+                                        POR: R$70,00 
+                                    </p>
+                                <a href="#" class="btn btn-primary" id="button-comprar">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card" id="produtos-promocao">
+                            <img src="https://nerdaocubo.com.br/cdn/shop/files/produtos_site.png?v=1686854601&width=1296" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    Roupas, Acessórios e muito mais
+                                </h4>
+                                <div class="preco-comprar">
+                                    <p class="card-text preco-riscado" id="preco-promocao">
+                                        DE: R$89,99
+                                    </p>
+                                    <p class="card-text" id="preco-promocao">
+                                        POR: R$70,00 
+                                    </p>
+                                <a href="#" class="btn btn-primary" id="button-comprar">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card" id="produtos-promocao">
+                            <img src="https://nerdaocubo.com.br/cdn/shop/files/produtos_site.png?v=1686854601&width=1296" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    Roupas, Acessórios e muito mais
+                                </h4>
+                                <div class="preco-comprar">
+                                    <p class="card-text preco-riscado" id="preco-promocao">
+                                        DE: R$89,99
+                                    </p>
+                                    <p class="card-text" id="preco-promocao">
+                                        POR: R$70,00 
+                                    </p>
+                                <a href="#" class="btn btn-primary" id="button-comprar">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card" id="produtos-promocao">
+                            <img src="https://nerdaocubo.com.br/cdn/shop/files/produtos_site.png?v=1686854601&width=1296" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    Roupas, Acessórios e muito mais
+                                </h4>
+                                <div class="preco-comprar">
+                                    <p class="card-text preco-riscado" id="preco-promocao">
+                                        DE: R$89,99
+                                    </p>
+                                    <p class="card-text" id="preco-promocao">
+                                        POR: R$70,00 
+                                    </p>
+                                <a href="#" class="btn btn-primary" id="button-comprar">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card" id="produtos-promocao">
+                            <img src="https://nerdaocubo.com.br/cdn/shop/files/produtos_site.png?v=1686854601&width=1296" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    Roupas, Acessórios e muito mais
+                                </h4>
+                                <div class="preco-comprar">
+                                    <p class="card-text preco-riscado" id="preco-promocao">
+                                        DE: R$89,99
+                                    </p>
+                                    <p class="card-text" id="preco-promocao">
+                                        POR: R$70,00 
+                                    </p>
+                                <a href="#" class="btn btn-primary" id="button-comprar">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="produtos">
+            <div class="container">
+                <h4 class="titulo-secao">Produtos:</h4>
+                <div class="row" id="secao-produto">
+                    <div class="col-4" id="produtos-cheios">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/600x600" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    Outros produtos
+                                </h4>
+                                <div class="preco-comprar">
+                                    <p class="card-text" id="preco">
+                                        POR: R$89,99
+                                    </p>
+                                <a href="#" class="btn btn-primary" id="button-comprar">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4" id="produtos-cheios">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/600x600" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    Outros produtos
+                                </h4>
+                                <div class="preco-comprar">
+                                    <p class="card-text" id="preco">
+                                        POR: R$89,99
+                                    </p>
+                                <a href="#" class="btn btn-primary" id="button-comprar">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4" id="produtos-cheios">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/600x600" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    Outros produtos
+                                </h4>
+                                <div class="preco-comprar">
+                                    <p class="card-text" id="preco">
+                                        POR: R$89,99
+                                    </p>
+                                <a href="#" class="btn btn-primary" id="button-comprar">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4" id="produtos-cheios">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/600x600" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    Outros produtos
+                                </h4>
+                                <div class="preco-comprar">
+                                    <p class="card-text" id="preco">
+                                        POR: R$89,99
+                                    </p>
+                                <a href="#" class="btn btn-primary" id="button-comprar">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4" id="produtos-cheios">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/600x600" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    Outros produtos
+                                </h4>
+                                <div class="preco-comprar">
+                                    <p class="card-text" id="preco">
+                                        POR: R$89,99
+                                    </p>
+                                <a href="#" class="btn btn-primary" id="button-comprar">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4" id="produtos-cheios">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/600x600" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    Outros produtos
+                                </h4>
+                                <div class="preco-comprar">
+                                    <p class="card-text" id="preco">
+                                        POR: R$89,99
+                                    </p>
+                                <a href="#" class="btn btn-primary" id="button-comprar">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="titulo-sobre" id="sobre">
+                <h2>
+                    Sobre a loja
+                </h2>
+            </div>
+        </div>
+        <div class="container">
+            <div>
+                <div class="container sobre" id="secao-sobre">
+                    <div>
+                        <img src="https://via.placeholder.com/400x400" id="img-sobre">
+                    </div>
+                    <div id="sobre-texto">
+                        <!-- <h4 class="titulo-secao">Sobre a loja</h4> -->
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquam amet quia? Est possimus labore quibusdam? Aliquam quibusdam ut eum quo alias quidem aut odit et, vel ex, minus reprehenderit?
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquam amet quia? Est possimus labore quibusdam? Aliquam quibusdam ut eum quo alias quidem aut odit et, vel ex, minus reprehenderit?
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquam amet quia? Est possimus labore quibusdam? Aliquam quibusdam ut eum quo alias quidem aut odit et, vel ex, minus reprehenderit?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5" id="contato">
+            <div class="row-4" id="nosContate-form">
+                <div class="col-lg-5 form" id="contato-input">
+                    <h4 class="titulo-secao">Fale Conosco</h4>
+                    <form>
+                        <label for="nome" class="form-label">Nome:</label>
+                        <input type="text" class="form-control" name="nome" id="nome" required>
+                        <label for="email" class="form-label mt-3">E-mail:</label>
+                        <input type="text" class="form-control" name="email" id="email" required>
+                        <label for="telefone" class="form-label mt-3">Telefone:</label>
+                        <input type="text" class="form-control" name="telefone" id="telefone" required>
+                        <div class="form-check form-switch mt-2" id="novos-produtos">
+                            <label class="form-check-label mb-3" for="novos-produtos">Quero receber notificações sobre novos produtos.</label>
+                            <input class="form-check-input mb-3" type="checkbox" name="novos-produtos" id="checkBox_novos-produtos">
+                        </div>
+                        <button class="btn btn-success">Confirmar</button>
+                    </form>
+                </div>
+                <div class="col-lg-5" id="venha-ate-nos">
+                    <h4 class="titulo-secao">Venha até nós!</h4>
+                    <p>Rua Python n° 578, Bairro JavaScript - São Paulo</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container footer-conteiner">
+            <div>
+                <p id="p-footer">
+                    2023 &copy; Nome Loja - Todos os direitos reservados
+                </p>
+            </div>
+            <div>
+                <ul class="img-footer">
+                    <li>
+                        <a href="#">
+                            <img src="./icones/facebook.png" alt="Facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./icones/instagram.png" alt="Instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./icones/youtube.png" alt="Youtube">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
