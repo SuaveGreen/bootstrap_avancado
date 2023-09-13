@@ -5,6 +5,7 @@
 }
 
 header {
+    z-index: 3;
     position: sticky;
     top: 0;
     left: 0;
@@ -19,16 +20,11 @@ header {
 
 .titulo-sobre {
     border-bottom: 1px solid rgb(70, 25, 112);
-    
+    margin-bottom: 20px;
 }
 
 .col-4 {
     margin-top: 25px;
-}
-
-div .row,
-#sobre {
-    margin-bottom: 50px;
 }
 
 .preco-comprar {
@@ -49,6 +45,12 @@ div .row,
 
 #button-comprar {
     margin-left: 50px;
+}
+
+#promocao,
+#produtos,
+#sobre {
+    padding-bottom: 80px;
 }
 
 #preco-promocao {
@@ -91,6 +93,7 @@ footer {
 }
 
 .img-footer img {
+    margin-left: 15px;
     width: 32px;
     height: 32px;
 }
@@ -118,10 +121,6 @@ footer {
 
     #menu-link {
         padding-left: 15px;
-    }
-
-    #titulo-promocao {
-        margin-top: 30px;
     }
 
     #secao-produto {
@@ -182,6 +181,7 @@ footer {
 
     #menu-link {
         padding-left: 10px;
+        margin-top: 15px;
     }
 
     /*
